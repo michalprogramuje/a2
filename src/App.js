@@ -40,7 +40,7 @@ class App extends Component {
 
     inputs = (
     <div>
-    {this.state.fields.map( (field , index) => {
+    {this.state.fields.map( (field) => {
       return <UserInput
         text = {field.text}
         key = {field.id}
@@ -50,7 +50,7 @@ class App extends Component {
   );
     validations = (
       <div>
-      {this.state.fields.map( (field , index) => {
+      {this.state.fields.map( (field) => {
         return <Validation
         text = {field.text}/>
       })}</div>
